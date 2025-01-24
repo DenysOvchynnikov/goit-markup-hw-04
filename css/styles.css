@@ -165,10 +165,9 @@ body {
 /*secction 1*/
 .section-one {
     background-color: #2E2F42;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-         rgba(46, 47, 66, 0.7)),
-          url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -231,11 +230,11 @@ body {
     fill: #F4F4FD;
     background-color: #4D5AE5;
     border-radius: 50%;
-    transition: background-color 250ms
-    cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .svg-item-link:hover,
-.svg-item-link:focus{
+.svg-item-link:focus {
     background-color: #404BBF;
 
 }
@@ -335,6 +334,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .text-names {
@@ -382,18 +382,46 @@ body {
     column-gap: 24px;
 }
 
+.sect-four-apps {
+    flex-basis: calc((100% - 48px) / 3);
+}
+
 .text-apps {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
 
-/* .container-apps {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-} */
-.sect-four-apps {
-    flex-basis: calc((100% - 48px) / 3);
+.sect-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.sect-overlay-text {
+    position: absolute;
+    background-color: #4D5AE5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sect-overlay:hover .sect-overlay-text {
+    transform: translateY(0);
+}
+
+.sect-four-apps:hover,
+.sect-four-apps:focus {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 /* section4 */
