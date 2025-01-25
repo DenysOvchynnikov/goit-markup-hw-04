@@ -96,7 +96,6 @@ body {
     display: inline-block;
     margin-bottom: 16px;
 }
-
 /* header and footer*/
 /* nav menu*/
 .list-menu {
@@ -106,12 +105,12 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #404bbf;;
+    color: #2E2F42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-menu:hover,
-.list-menu:focus {
+.list-menu:focus, .list-menu.current {
     color: #404BBF;
 }
 
