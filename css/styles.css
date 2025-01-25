@@ -241,9 +241,8 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-item-link:hover,
-.svg-item-link:focus {
-    background-color: #404BBF;
+.svg-item-link:hover, .svg-item-link:focus {
+    background-color: #404bbf;
 }
 
 
@@ -391,6 +390,7 @@ body {
 
 .sect-four-apps {
     flex-basis: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 }
 .sect-four-apps:hover,
