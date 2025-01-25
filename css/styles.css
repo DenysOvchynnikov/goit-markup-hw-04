@@ -241,12 +241,10 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-item-link:hover {
+.svg-item-link:hover, .svg-item-link:focus {
     background-color: #404bbf;
 }
-.svg-item-link:focus {
-    background-color: #404bbf;
-}
+
 
 
 /* .container-btn{
@@ -398,7 +396,7 @@ body {
 }
 .sect-four-apps:hover,
 .sect-four-apps:focus {
-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-apps {
